@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 450px;
+    border-radius: 15px;
+    background-color: rgb(150, 91, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container #result{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.5s ease all;
+}
+.container .button-box{
+    width: 70%;
+    height: 200px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .button-box button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container .button-box button  ion-icon{
+    font-size: 50px;
+    color: aliceblue;
+}
+.container .button-box button:nth-of-type(1) ion-icon{
+    color: gold;
+
+}
+.container .button-box button:nth-of-type(2) ion-icon{
+    color:green;
+    
+}
+.container .button-box button:nth-of-type(3) ion-icon{
+    color: red;
+    
+}
+@media(max-width:400px){
+    .container{
+        height: 380px;
+    }
+    .container .button-box{
+        width: 100%;
+    }
+}
